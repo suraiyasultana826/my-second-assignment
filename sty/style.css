@@ -62,82 +62,199 @@
 .nav-options a {
     text-decoration: none;
     color: #3C354F;
-text-align: center;
-font-family: Work Sans;
-font-size: 18px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
-.play-like-the{
+
+.play-like-the {
     color: #0B0223;
-/* text-align: center;
+    /* text-align: center;
 font-family: Work Sans; */
-font-size: 38px;
-font-style: normal;
-font-weight: 600;
-/* line-height: normal; */
-text-transform: uppercase;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 600;
+    /* line-height: normal; */
+    text-transform: uppercase;
 }
-.goat{
+
+.goat {
     /* text-align: center; */
-font-family: Work Sans;
-font-size: 85px;
-font-style: normal;
-font-weight: 800;
-/* line-height: normal; */
-text-transform: uppercase;
-background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-margin-top: auto;
+    font-family: Work Sans;
+    font-size: 85px;
+    font-style: normal;
+    font-weight: 800;
+    /* line-height: normal; */
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: auto;
 
 }
-.header-privilege{
+
+.header-privilege {
     color: #534C64;
-font-family: Work Sans;
-font-size: 20px;
-font-style: normal;
-font-weight: 500;
-/* line-height: normal; */
+    font-family: Work Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    /* line-height: normal; */
 }
-.header-description{
+
+.header-description {
     display: flex;
     flex-direction: row-reverse;
-    gap:50px;
-    margin-left: 100px;
-    margin-right: 100px;
+    gap: 50px;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 10px;
 }
-.header-title-container{
-    /* max-height: 200px; */
+
+.header-title-container {
+    margin-top: 100px;
 }
-@media screen and (max-width:576px){
-    .nav-options, .nav-bar{
+
+.btn {
+    display: flex;
+    gap: 10px;
+
+}
+
+.button-one {
+    border-radius: 12px;
+    color: white;
+    border: none;
+    background-color: hotpink;
+    height: 40px;
+    width: 100px;
+    margin-top: 10px;
+    cursor: pointer;
+
+}
+
+.button-two {
+    border-radius: 12px;
+    color: white;
+    border: none;
+    background-color: rgb(41, 149, 192);
+    height: 40px;
+    width: 100px;
+    margin-top: 10px;
+    cursor: pointer;
+
+}
+
+.main-section {
+    display: flex;
+    gap: 10px;
+    margin-top: 70px;
+}
+
+.main-description {
+    margin-right: 50px;
+}
+
+.main-section-paragraph {
+    color: #534C64;
+    text-align: right;
+    font-family: Work Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    /* 166.667% */
+}
+
+.main-section-title {
+    text-align: right;
+    font-family: Work Sans;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main-paragraph-one {
+    color: #534C64;
+    text-align: right;
+    font-family: Work Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 45px;
+    /* 187.5% */
+    margin-left: 170px;
+}
+
+.main-paragraph-two {
+    color: #534C64;
+    font-family: Work Sans;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 45px;
+}
+
+@media screen and (max-width:576px) {
+
+    .nav-options,
+    .nav-bar, .main-section {
         flex-direction: column;
     }
-    .header-description{
+
+    .header-description {
         flex-direction: column;
     }
-    .header-description{
+
+    .header-description {
         width: 77%;
-      
-        /* margin-left: 50px;
-        padding-left: 50px; */
-        
+
     }
-    .goat{
+
+    .goat {
         width: 100%;
     }
-    
+.main-section{
+    flex-direction: column;
+   
 }
+
+}
+
 @media screen and (min-width:577px) and (max-width:992px) {
-    .nav-options, .nav-bar{
+
+    .nav-options,
+    .nav-bar {
         flex-direction: column;
     }
-    .header-description{
+
+    .header-description {
         flex-direction: column;
     }
-    
-    
+
+    .header-description {
+        width: 77%;
+
+
+
+    }
+
+    .goat {
+        width: 100%;
+    }
+
+    /* .btn{
+        flex-direction: column;
+    } */
+
+
 }
