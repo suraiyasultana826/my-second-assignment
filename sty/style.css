@@ -2,6 +2,8 @@
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-bar {
@@ -25,6 +27,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    margin-top: 20px;
 
 }
 
@@ -247,7 +250,27 @@ font-family: Work Sans; */
 }
 
 .card-img {
-    width: 200px;
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+.content{
+    width: 80%;
+    height: 100%;
+    top: 0;
+    left: 29px;
+    color: #F948B2;
+    position: absolute;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transform: 0.6s;
+}
+.content:hover{
+    opacity: 1;
 }
 
 .cards-caption {
@@ -258,6 +281,9 @@ font-family: Work Sans; */
     font-weight: 500;
     line-height: 15px;
     /* 150% */
+}
+.image{
+    position: relative;
 }
 
 .position {
@@ -319,6 +345,7 @@ button:hover {
     justify-content: center;
     align-items: center;
 }
+/* footer section starts from here */
 .footer-section{
     height: 500px;
     background-color: #0B0223;
@@ -350,11 +377,9 @@ font-size: 18px;
 font-style: normal;
 font-weight: 600;
 line-height: normal;
+padding-top: 50px;
 }
-/* .brand-icons{
-    height: 60px;
-    width: 60px;
-} */
+
 .footer-icons{
     padding-top: 50px;
     display: flex;
@@ -381,7 +406,7 @@ font-weight: 500;
 line-height: normal;
 }
 .gamer-bd{
-    padding-top: 10px;
+    padding-top: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -439,15 +464,9 @@ line-height: normal;
         left: -50px;
 
     }
-
-    /* .button{
-        width: 220px;
-        height: 50px;
-    }
-    .button-section{
-        display: grid;
-        grid-gap: 10px;
-        grid-template-columns: repeat(2,1fr); */
+.card-section{
+    padding-right: 80px;
+}
 }
 
 
